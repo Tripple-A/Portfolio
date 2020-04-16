@@ -1,0 +1,65 @@
+#about{
+    padding-bottom:20px;
+}
+
+#about h3, #projects h3{
+  color:#AE5DFF;
+  font-size:36px;
+  font-weight: bold;
+  border-bottom: dotted;
+  width:max-content;
+  padding-bottom: 10px;
+}
+
+#about h5{
+    font-size: 24px;
+}
+
+#about h4{
+    font-size: 18px;
+}
+
+.ipad{
+    width:500px;
+    height:300px
+}
+
+#projects ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+#projects ul li{
+    font-size: 20px;
+    background: linear-gradient(rgb(158,187,255), rgb(179, 130, 228));
+    padding:9px;
+    color:white;
+    border-radius: 5px;
+    float:left;
+    margin-right:5px;
+    
+}
+
+#projects aside{
+    height:300px;
+    border:2px solid red;
+    text-align: left;
+}
+
+#projects h4{
+    font-size:30px;
+    padding:10px;
+    border-bottom: 1px solid black;
+    border-color: rgb(158,187,255);
+    width:80%;
+    margin:0px auto;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#projects h5{
+    font-size: 18px;
+    line-height: 3rem;
+}

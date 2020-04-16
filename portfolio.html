@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <title>Biodun's Portfolio</title>
 </head>
+
 <body>
     <main class="container-fluid">
         <section class="row">
-        <aside class="col-md-3">
-            <nav>
-                <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
-                    <li role="presentation"><a href="#">Projects</a></li>
-                    <li role="presentation"><a href="#">Skills</a></li>
-                    <li role="presentation"><a href="#">Articles</a></li>
-                </ul>
-                <div class="icons row">
-                    <img src="https://img.icons8.com/nolan/64/linkedin.png"  />
-                    <img src="https://img.icons8.com/nolan/64/github.png"/>
-                    <img src="https://img.icons8.com/nolan/64/twitter.png"/>
-                    <img src="https://img.icons8.com/nolan/64/important-mail.png"/>
-                </div>
-            </nav>
-        </aside>
-        <section class="col-md-9 roles">
-            <p>Mathematician<span class="dot">.</span></p>
-            <p>Engineer<span class="dot">.</span></p>
-            <p>Mentor<span class="dot">.</span></p>
-            <p>Full Stack Developer<span class="dot">.</span></p>
+            <aside class="col-md-3">
+                <nav>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="#home">Home</a></li>
+                        <li role="presentation"><a href="#about">About</a></li>
+                        <li role="presentation"><a href="#projects">Projects</a></li>
+                        <li role="presentation"><a href="#">Skills</a></li>
+                        <li role="presentation"><a href="#">Articles</a></li>
+                    </ul>
+                    <div class="icons row">
+                        <img src="https://img.icons8.com/nolan/64/linkedin.png" />
+                        <img src="https://img.icons8.com/nolan/64/github.png" />
+                        <img src="https://img.icons8.com/nolan/64/twitter.png" />
+                        <img src="https://img.icons8.com/nolan/64/important-mail.png" />
+                    </div>
+                </nav>
+            </aside>
+            <section class="col-md-9 roles" id="home">
+                <p>Mathematician<span class="dot">.</span></p>
+                <p>Engineer<span class="dot">.</span></p>
+                <p>Mentor<span class="dot">.</span></p>
+                <p>Full Stack Developer<span class="dot">.</span></p>
+
+                <section id="about">
+                    <h3> About me</h3>
+                    <h5> Hi, I'm Biodun. </h5>
+                    <h5> It's a pleasure to have you here!👋🏼 </h5>
+                    <h4> I love to build something out of nothing but pure code and testing code excites me.
+                    </h4>
+                    <h4> I also love solving Algorithms and explaining complex concepts.</h4>
+                </section>
+
+                <section id="projects">
+                    <h3>Projects</h3>
+                    <div class="row">
+                        <aside class=col-md-6>
+             <h4>Covid-19 Info Tracker</h4>
+             <h5>An app that gives you real-time statistics on Covid-19 in all affected countries. 
+            </h5>
+        <ul>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Bootstrap</li>
+            <li>Css</li>
+            <li>Responsive</li>
+        </ul>
+                        </aside>
+                        <img src="cov.png" class="ipad col-md-4" />
+                    </div>
+                    
+                </section>
+            </section>
         </section>
-    </section>
     </main>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
