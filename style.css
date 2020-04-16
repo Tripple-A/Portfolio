@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    padding:0
+}
+
+aside{
+    border:1px solid black;
+    height:100vh;
+}
+
+.icons{
+    border: 1px solid black;
+    position:fixed;
+    bottom:0;
+    border-right:none;
+}
+
+.icons img:not(:last-child){
+    padding-right:15px;
+    border-right:1px solid black;
+    padding-left:14px;
+   
+}
+
+.nav{
+   text-align: center;
+   padding-top:30px;
+   width:50%;
+   margin:0px auto;
+   font-size:26px;
+}
+
+.nav li a{
+    padding-bottom:30px;
+    color:rgb(158,187,255);
+    font-weight: bolder;
+}
+
+.roles{
+    font-size:48px;
+    font-family: monospace;
+    font-weight: bolder;
+    padding-top:20px;
+    padding-left:30px;
+}
+
+.dot{
+    font-size: 64px;
+    font-weight:bold;
+    color:rgb(158,187,255);
+}
