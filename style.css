@@ -4,6 +4,10 @@ body{
     font-family: monospace;
 }
 
+main {
+    overflow: hidden;
+    height: 750px;
+}
 
 aside{
     border:2px solid black;
@@ -66,4 +70,5 @@ aside{
 .body-content {
     height: 750px;
     overflow-y: auto;
+    overflow-x: hidden;
 }

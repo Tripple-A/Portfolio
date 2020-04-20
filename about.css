@@ -7,7 +7,7 @@
   font-size:36px;
   font-weight: bold;
   border-bottom: dotted;
-  width:max-content;
+  width: max-content;
   padding-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@
     margin-right:5px;
 }
 
-#projects aside{
+#projects .aside-project{
     height: calc(100% + 70px);
     border-radius:10px;
     border:none;
@@ -67,4 +67,19 @@
     font-size: 18px;
     word-wrap: break-word;
     margin-bottom: 5px;
+}
+
+.project-img{
+    max-width: 500px;
+    height: auto;
+}
+
+.container-projects {
+    width: 98%
+}
+
+.projects-row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap
 }
