@@ -13,8 +13,8 @@ This is my portfolio built to showcase my projects, skills and articles.
 * [Acknowledgements](#acknowledgements)
 
 
-<!-- User features -->
-## User Features
+<!-- Viewer features -->
+## Viewer Features
 * A viewer can navigate to any section using the nav bar..
 * A viewer can view the live version amd source code of any project showcased..
 * The page is mobile-responsive.
@@ -51,7 +51,7 @@ Move to the downloaded folder
 
 ```Shell
 your@pc:~$ cd Portfolio
-```. 
+```
 
 Open the index.html page in your browser.
 
