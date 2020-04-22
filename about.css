@@ -2,7 +2,7 @@
     padding-bottom:20px;
 }
 
-#about h3, #projects h3{
+#about h3, #projects h3, #skills h3{
   color:#AE5DFF;
   font-size:36px;
   font-weight: bold;
@@ -35,14 +35,14 @@
 #projects ul li{
     font-size: 20px;
     background: linear-gradient(rgb(158,187,255), rgb(179, 130, 228));
-    padding:9px;
+    padding:3px 9px;
     color:white;
     border-radius: 5px;
     float:left;
     margin-right:5px;
 }
 
-#projects .aside-project{
+#projects .aside-project, .box-1{
     height: calc(100% + 70px);
     border-radius:10px;
     border:none;
@@ -50,17 +50,25 @@
     background-color: #F3F8FF;
     padding:20px;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    margin-bottom:40px;
 }
 
 #projects h4{
     font-size:30px;
     padding:10px;
     border-bottom: 1px solid black;
-    border-color: rgb(158,187,255);
+    border-color: rgb(179, 130, 228);
     margin:0px auto;
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
+    width:80%;
+}
+
+#projects h6{
+    font-size:18px;
+    line-height: 2.5rem;
+    padding-bottom:10px;
 }
 
 #projects h5{
@@ -72,6 +80,7 @@
 .project-img{
     max-width: 500px;
     height: auto;
+    padding-top:20px;
 }
 
 .container-projects {
@@ -82,4 +91,44 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap
+}
+
+.skills-box{
+    display:flex
+}
+
+#skills ul li{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.box-1{
+    width:500px;
+    position: relative;
+    margin-top: 30px;
+    margin-right:20px;
+}
+
+.box-2{
+    height:300px;
+}
+
+.skill-logo{
+    height:70px;
+    width:70px;
+    background-color: #AE5DFF;
+    position:absolute;
+    margin-left: 40%;
+    margin-top:-12%;
+    margin-bottom:30px;
+    border-radius:50%;
+    text-align: center;
+}
+
+.box-1 h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center;
+    padding:40px 0px;
 }
