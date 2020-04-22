@@ -11,22 +11,27 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="overlay.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="overlay.js"></script>
     <title>Biodun's Portfolio</title>
 </head>
 
 <body>
     <main class="container-fluid">
+        <span class="open-btn" onclick="openNav()">&#9776; open</span>
         <section class="row">
-            <aside class="col-md-3">
-                <nav>
+            <aside id="myNav" class="col-md-3 ">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <nav class="overlay-content">
                     <ul class="nav nav-pills nav-stacked">
-                        <li role="presentation"><a href="#home">Home</a></li>
-                        <li role="presentation"><a href="#about">About</a></li>
-                        <li role="presentation"><a href="#projects">Projects</a></li>
-                        <li role="presentation"><a href="#">Skills</a></li>
-                        <li role="presentation"><a href="#">Articles</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#home">Home</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#about">About</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#projects">Projects</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#skills">Skills</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#articles">Articles</a></li>
                     </ul>
-                    <div class="icons row">
+                    <div class="icons row test">
                         <img src="https://img.icons8.com/nolan/64/linkedin.png" />
                         <img src="https://img.icons8.com/nolan/64/github.png" />
                         <img src="https://img.icons8.com/nolan/64/twitter.png" />
@@ -60,7 +65,8 @@
                                     <h6> <img src="https://img.icons8.com/nolan/28/info.png" />
                                         An app that makes it possible for users to sign up and view food
                                         vendors around them and avails users the opportunity to become vendors
-                                        themselves and showcase their products.
+                                        themselves and showcase their products. The front end is built with React and
+                                        the backend with Rails.
                                     </h6>
                                     <ul>
                                         <li>Rails</li>
@@ -68,7 +74,7 @@
                                         <li>React</li>
                                         <li>Redux</li>
                                         <li>Tailwind Css</li>
-
+                                        <li>Postgre Sql</li>
 
                                     </ul>
                                     <a href="">
@@ -114,14 +120,16 @@
                             <div class="aside-project">
                                 <h4>Event Rite App</h6>
                                     <h6> <img src="https://img.icons8.com/nolan/28/info.png" />
-                                        An app that lets users create events and manage the attendance. Non signed in users can view
-                                        upcoming and past events but to create events and manage attendance,users need to be signed in.
+                                        An app that lets users create events and manage the attendance. Non signed in
+                                        users can view
+                                        upcoming and past events but to create events and manage attendance,users need
+                                        to be signed in.
                                     </h6>
                                     <ul>
                                         <li>Rails</li>
                                         <li>Css</li>
                                         <li>RSpec</li>
-                                    
+
 
 
                                     </ul>
@@ -142,8 +150,8 @@
                             <div class="aside-project">
                                 <h4>Weather Gypsy App</h6>
                                     <h6> <img src="https://img.icons8.com/nolan/28/info.png" />
-                                       This is a weather App that lets users search for the weather 
-                                       conditions in any city of their choice. 
+                                        This is a weather App that lets users search for the weather
+                                        conditions in any city of their choice.
                                     </h6>
                                     <ul>
                                         <li>Javascript</li>
@@ -151,7 +159,7 @@
                                         <li>Jest</li>
                                         <li>APIs</li>
                                         <li>Webpack</li>
-                                        
+
 
 
                                     </ul>
@@ -172,36 +180,55 @@
                     <section id="skills">
                         <h3>Skills</h3>
                         <div class="skills-box">
-                          <div class="box-1">
-                              <div class="skill-logo">
-                                <img src="https://img.icons8.com/dotty/50/000000/source-code.png"/>
-                              </div>
-                             <h4>Front End</h4>
-                             <ul>
-                                 <li>React/Redux</li>
-                                 <li>Javascript</li>
-                                 <li>HTML/CSS/SASS</li>
-                                 <li>Webpack</li>
-                                 <li>TDD</li>
-                             </ul>
-                          </div>
-                          <div class="skills-box">
-                          <div class="box-1 box-2">
-                              <div class="skill-logo">
-                                <img src="https://img.icons8.com/ios/50/000000/database.png"/>
-                              </div>
-                             <h4>Back End</h4>
-                             <ul>
-                                 <li>Ruby/Rails</li>
-                                 <li>RSpec/Capybara</li>
-                                 <li>REST API</li>
-                                 <li>Postgre Sql</li>
-                                 <li>TDD</li>
-                             </ul>
-                          </div>
+                            <div class="box-1">
+                                <div class="skill-logo">
+                                    <img src="https://img.icons8.com/dotty/50/000000/source-code.png" />
+                                </div>
+                                <h4>Front End</h4>
+                                <ul>
+                                    <li>React/Redux</li>
+                                    <li>Javascript</li>
+                                    <li>HTML/CSS/SASS</li>
+                                    <li>Webpack</li>
+                                    <li>TDD</li>
+                                </ul>
+                            </div>
+                            <div class="skills-box">
+                                <div class="box-1 box-2">
+                                    <div class="skill-logo">
+                                        <img src="https://img.icons8.com/ios/50/000000/database.png" />
+                                    </div>
+                                    <h4>Back End</h4>
+                                    <ul>
+                                        <li>Ruby/Rails</li>
+                                        <li>RSpec/Capybara</li>
+                                        <li>REST API</li>
+                                        <li>Postgre Sql</li>
+                                        <li>TDD</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
+                    </section>
+                    <section id="articles">
+                        <h3>Articles</h3>
+                        <div class="medium">
+                            <h4>A list of my articles include:</h4>
+                            <ul>
+                                <a href="">
+                                    <li>The Coolest Thing About Redux Store In React</li>
+                                </a>
+                                <a href="">
+                                    <li>One More Reason To Use Redux</li>
+                                </a>
+                                <a href="">
+                                    <li>Dismantling the Hackerrank Game of Thrones Challenge Using Javascript</li>
+                                </a>
+                                
+                            </ul>
+
                         </div>
-                        
                     </section>
                 </section>
             </section>
@@ -212,6 +239,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
+        <script>
+            $(window).on('resize', function() {
+    if($(window).width() < 770) {
+        $('#myNav').addClass('overlay');
+        console.log('horny')
+    }else{
+        $('#myNav').removeClass('overlay');
+        console.log('honey')
+    }
+})
+        </script>
+       
 </body>
 
 </html>

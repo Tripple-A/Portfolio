@@ -1,0 +1,86 @@
+.overlay {
+    display: none;
+}
+  
+.open-btn {
+    display: none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.closebtn {
+display: none;
+}
+@media screen and (min-width: 430px){
+  .overlay .icons img{
+      padding: 0px 28px;
+  }
+}
+
+  @media screen and (max-width: 770px) {
+    .test {
+        padding-left: 25px;
+    }
+
+    
+    
+    .open-btn, .closebtn {
+    display: initial;
+    }
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+    .overlay {
+        display: initial;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        margin-top: 15%;
+      }
+      
+      .overlay a {
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        font-size: 60px;
+        color: rebeccapurple
+      }
+    
+  }
+  
+  @media screen and (max-width: 375px) {
+    .test {
+        padding-left:10px;
+    }
+    .icons img {
+        width:85px
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .icons img {
+        width: 72px
+    }
+
+}

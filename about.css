@@ -2,7 +2,7 @@
     padding-bottom:20px;
 }
 
-#about h3, #projects h3, #skills h3{
+#about h3, #projects h3, #skills h3, #articles h3{
   color:#AE5DFF;
   font-size:36px;
   font-weight: bold;
@@ -40,9 +40,10 @@
     border-radius: 5px;
     float:left;
     margin-right:5px;
+    margin-bottom: 5px;
 }
 
-#projects .aside-project, .box-1{
+#projects .aside-project, .box-1, .medium{
     height: calc(100% + 70px);
     border-radius:10px;
     border:none;
@@ -131,4 +132,13 @@
     margin: 0px auto;
     text-align: center;
     padding:40px 0px;
+}
+
+#articles ul li{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.medium{
+    width:70%;
 }
