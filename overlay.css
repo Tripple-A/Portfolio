@@ -1,15 +1,13 @@
-.overlay {
+
+@media screen and (min-width: 770px) {
+  .overlay {
     display: none;
 }
   
-.open-btn {
+.open-btn, .closebtn {
     display: none;
-    font-size:30px;
-    cursor:pointer;
 }
 
-.closebtn {
-display: none;
 }
 @media screen and (min-width: 430px){
   .overlay .icons img{
@@ -22,11 +20,23 @@ display: none;
         padding-left: 25px;
     }
 
-    
-    
-    .open-btn, .closebtn {
-    display: initial;
+    .open-btn {
+      font-size:30px;
+      padding-top:5%;
+      cursor:pointer;
+  }
+
+  .menu{
+    background-color: red;
+    position: fixed;
+    width:10%;
+    text-align: center;
+  }
+
+    #myNav{
+      display: none;
     }
+    
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
@@ -35,7 +45,7 @@ display: none;
     }
     
     .overlay {
-        display: initial;
+        display: block;
         height: 100%;
         width: 0;
         position: fixed;
@@ -55,9 +65,6 @@ display: none;
         transition: 0.3s;
       }
       
-      .overlay a:hover, .overlay a:focus {
-        color: #f1f1f1;
-      }
       
       .overlay .closebtn {
         position: absolute;

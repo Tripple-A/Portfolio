@@ -19,9 +19,26 @@
 
 <body>
     <main class="container-fluid">
-        <span class="open-btn" onclick="openNav()">&#9776; open</span>
+        
         <section class="row">
             <aside id="myNav" class="col-md-3 ">
+                <nav >
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" onclick="closeNav()"><a href="#home">Home</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#about">About</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#projects">Projects</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#skills">Skills</a></li>
+                        <li role="presentation" onclick="closeNav()"><a href="#articles">Articles</a></li>
+                    </ul>
+                    <div class="icons row">
+                        <img src="https://img.icons8.com/nolan/64/linkedin.png" />
+                        <img src="https://img.icons8.com/nolan/64/github.png" />
+                        <img src="https://img.icons8.com/nolan/64/twitter.png" />
+                        <img src="https://img.icons8.com/nolan/64/important-mail.png" />
+                    </div>
+                </nav>
+            </aside>
+            <aside class=" overlay col-md-3 ">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <nav class="overlay-content">
                     <ul class="nav nav-pills nav-stacked">
@@ -41,6 +58,9 @@
             </aside>
 
             <section class="body-content col-md-9 container">
+                <div class="menu">
+                    <span class="open-btn" onclick="openNav()">&#9776;</span>
+                </div>
                 <section class="roles row" id="home">
                     <p>Mentor<span class="dot">.</span></p>
                     <p>Engineer<span class="dot">.</span></p>
@@ -239,17 +259,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-        <script>
-            $(window).on('resize', function() {
-    if($(window).width() < 770) {
-        $('#myNav').addClass('overlay');
-        console.log('horny')
-    }else{
-        $('#myNav').removeClass('overlay');
-        console.log('honey')
-    }
-})
-        </script>
+       
        
 </body>
 
