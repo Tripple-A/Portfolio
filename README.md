@@ -30,8 +30,8 @@ This is my portfolio built to showcase my projects, skills and articles.
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW
-The live version shall be added in due course.
-The screenshot of what it looks like on both mobile screens and larger screens shall also be added soon.
+The live version shall be added in due course(after development).
+Below is a screenshot of what it looks like right now while still in development.
 ![Image](/proof.png)
 
 <!-- REQUIRED INSTALLATION -->
