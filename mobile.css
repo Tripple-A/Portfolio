@@ -1,6 +1,8 @@
 @media screen and (max-width: 380px){
   .roles p {
       font-size:36px;
+      margin-bottom:0px;
+      padding:0
   }
 
 }
@@ -15,6 +17,13 @@
 }
 
 @media screen and (max-width: 770px){
+    .dot{
+        font-size: 36px;
+    }
+
+    .roles p{
+        font-size: 30px;
+    }
     .projects-row {
         display:grid;
         justify-content: center;
