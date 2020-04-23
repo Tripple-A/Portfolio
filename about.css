@@ -91,7 +91,8 @@
 .projects-row {
     display: flex;
     justify-content: space-around;
-    flex-flow: row nowrap
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
 }
 
 .skills-box{
