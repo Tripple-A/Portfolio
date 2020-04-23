@@ -32,7 +32,7 @@ This is my portfolio built to showcase my projects, skills and articles.
 ## LIVE PREVIEW
 The live version shall be added in due course.
 The screenshot of what it looks like on both mobile screens and larger screens shall also be added soon.
-![Image](/src/proof.png)
+![Image](/proof.png)
 
 <!-- REQUIRED INSTALLATION -->
 ## REQUIRED INSTALLATIONS
