@@ -24,6 +24,10 @@
     .roles p{
         font-size: 30px;
     }
+
+    .roles{
+        margin-top:20px
+    }
     .projects-row {
         display:grid;
         justify-content: center;
