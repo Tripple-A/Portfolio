@@ -12,6 +12,8 @@ $(window).on('resize', function () {
 
 function openNav() {
     console.log('clicked')
+    document.querySelector('.overlay').style.display = "block";
+    document.querySelector('.overlay').style.transition = "0.5s";
     if ($(window).width() > 430) {
         document.querySelector('.overlay').style.width = "70%";
     } else {
@@ -21,5 +23,6 @@ function openNav() {
 
 function closeNav() {
     document.querySelector('.overlay').style.width = "0%";
+    document.querySelector('.overlay').style.display = "none";
 }
 

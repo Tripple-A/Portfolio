@@ -20,19 +20,31 @@
         padding-left: 25px;
     }
 
-    .open-btn {
-      font-size:30px;
-      padding-top:5%;
-      cursor:pointer;
-  }
+    .body-content{
+      width:100vw
+    }
 
   .menu{
-    background-color: red;
+    background-color:white;
     position: fixed;
-    width:10%;
+    width:64px;
+    height:64px;
+    border-radius: 50%;
     text-align: center;
+    left:0;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    margin-bottom:40px;
   }
 
+  .roles{
+    padding-top:35px;
+    padding-left:7%
+  }
+
+  .open-btn {
+    font-size:30px;
+    cursor:pointer;
+}
     #myNav{
       display: none;
     }
@@ -45,7 +57,7 @@
     }
     
     .overlay {
-        display: block;
+        adisplay: none;
         height: 100%;
         width: 0;
         position: fixed;
