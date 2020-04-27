@@ -1,12 +1,3 @@
-@media screen and (max-width: 380px){
-  .roles p {
-      font-size:36px;
-      margin-bottom:0px;
-      padding:0
-  }
-
-}
-
 @media screen and (max-width: 430px){
     #projects .project-img{
         max-width:300px
@@ -27,7 +18,7 @@
     }
     .skill-logo{
         margin-left: 30%;
-        margin-top:-18%;
+        margin-top:-15%;
     }
 }
 
@@ -64,5 +55,22 @@
      .skill-logo{
         margin-left: 35%;
      }
-
+     .medium{
+         width:90%
+     }
+     
 }
+
+@media screen and (max-width: 380px){
+    .roles p {
+        font-size:36px;
+        margin-bottom:0px;
+        padding:0
+    }
+    .skill-logo{
+      margin-top:-20%;
+      margin-left:33%
+  }
+  
+  }
+  
