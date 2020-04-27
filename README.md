@@ -66,4 +66,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* <a href="https://www.microverse.org/"> Microverse</a> .
+* <a href="https://www.microverse.org/"> Microverse</a> and 
+[Muhammad Ebeid](https://github.com/mosaaleb) from whom the design template orginated.
