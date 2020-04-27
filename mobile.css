@@ -14,6 +14,21 @@
     .projects-row{
         margin-left:-20px
     }
+    .skills-box{
+        display:grid;
+
+    }
+    .box-1{
+        width:90%;
+        margin:0px auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left:0px;
+    }
+    .skill-logo{
+        margin-left: 30%;
+        margin-top:-18%;
+    }
 }
 
 @media screen and (max-width: 770px){
@@ -46,4 +61,8 @@
          margin-bottom: -60px;
          z-index:5
      }
+     .skill-logo{
+        margin-left: 35%;
+     }
+
 }

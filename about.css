@@ -105,15 +105,13 @@
 }
 
 .box-1{
-    width:500px;
+    width:50%;
     position: relative;
     margin-top: 30px;
     margin-right:20px;
+    height: min-content;
 }
 
-.box-2{
-    height:300px;
-}
 
 .skill-logo{
     height:70px;
