@@ -6,7 +6,7 @@ body{
 
 main {
     overflow: hidden;
-    height: 750px;
+    height: 100vh;
 }
 
 aside{
@@ -22,15 +22,22 @@ aside{
     position:absolute;
     bottom:0;
     border-right:none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.icons img:not(:last-child){
-    border-right:1px solid black;
-}
 
 .icons img{
-    padding-right:12px;
-    padding-left:12px;
+    max-width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+.icon-link:not(:last-child) {
+    border-right:1px solid black;
+    display: flex;
+    justify-content: center;
 }
 
 .nav{
@@ -68,7 +75,12 @@ aside{
 } */
 
 .body-content {
-    height: 750px;
+    height: 99vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+
+footer{
+    text-align: center;
 }

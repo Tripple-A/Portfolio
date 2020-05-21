@@ -2,16 +2,13 @@
 $(window).on('resize', function () {
     if ($(window).width() < 770) {
         $('#myNav').addClass('overlay');
-        console.log('horny')
     } else {
         $('#myNav').removeClass('overlay');
-        console.log('honey')
     }
 })
 
 
 function openNav() {
-    console.log('clicked')
     document.querySelector('.overlay').style.transition = "0.5s";
     document.querySelector('.overlay').style.display = "block";
     if ($(window).width() > 430) {
@@ -26,3 +23,6 @@ function closeNav() {
     document.querySelector('.overlay').style.display = "none";
 }
 
+// setInterval(() => {
+//     document.body.style.setProperty('--contentHeight', `${window.innerHeight - 100}px`)
+// }, 2000);
