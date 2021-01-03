@@ -63,6 +63,10 @@
 }
 
 @media screen and (max-width: 430px){
+    .icons {
+      width: 105%;
+    }
+
     #projects .project-img{
         max-width:300px
     }
@@ -98,4 +102,13 @@
   }
   
   }
+  @media screen and (min-width: 770px) {
+    .overlay {
+      display: none;
+  }
+    
+  #myNav .closebtn {
+      display: none;
+  }
   
+  }

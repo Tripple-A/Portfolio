@@ -19,6 +19,8 @@ function openNav() {
 }
 
 function closeNav() {
+    console.log('you clicked close')
+    console.log(document.querySelector('.overlay'))
     document.querySelector('.overlay').style.width = "0%";
     document.querySelector('.overlay').style.display = "none";
 }
