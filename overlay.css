@@ -91,7 +91,8 @@
 
 @media screen and (max-width: 325px) {
     .icons img {
-        width: 72px
+        width: 72px;
+        margin-left: -25px;
     }
 
 }
